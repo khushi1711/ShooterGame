@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+/* Global and basic styles resets */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Bangers', cursive;
+}
+
+.title {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+  color: rgb(61, 60, 60);
+}
+.canvas {
+  background-color: whitesmoke;
+  max-width: 100%;
+  max-height: 100%;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Bangers', cursive;
+}
+
+.layer {
+  display: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Bangers', cursive;
+  color: rgb(61, 60, 60);
+}
+
+.rule {
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(61, 60, 60);
+}
+
+.rule > h1 {
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: rgb(61, 60, 60);
+}
+
+.rule > ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.rule > ul > li {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.target {
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  color: rgb(61, 60, 60);
+}
+
+.target > h2 {
+  font-weight: 500;
+  color: rgb(61, 60, 60);
+}

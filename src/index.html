@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shooters</title>
+  </head>
+  <body>
+    <h1 class="title">Space Voyage</h1>
+    <canvas class="canvas" id="main"></canvas>
+    <div class="rule">
+      <div class="target">
+        <h3>Target:</h3>
+        <h2>Score 300 points in 60 seconds</h2>
+      </div>
+      <h1>How to play</h1>
+      <ul>
+        <li>Press Up and Down key to move the Sentinel Seahorse</li>
+        <li>Press space bar to shoot</li>
+        <li>Press d to enter debug mode</li>
+      </ul>
+    </div>
+    <!-- player -->
+    <img class="layer" id="player" src="./assets/player.png" alt="player" />
+
+    <!-- projectile -->
+    <img
+      class="layer"
+      id="projectile"
+      src="./assets/projectile.png"
+      alt="projectile"
+    />
+
+    <!-- enemy -->
+    <img
+      class="layer"
+      id="angler1"
+      src="./assets/enemy/angler1.png"
+      alt="angler"
+    />
+    <img
+      class="layer"
+      id="angler2"
+      src="./assets/enemy/angler2.png"
+      alt="angler"
+    />
+    <img class="layer" id="lucky" src="./assets/enemy/lucky.png" alt="lucky" />
+    <img class="layer" id="drone" src="./assets/enemy/drone.png" alt="drone" />
+
+    <!-- particle -->
+    <img class="layer" id="gear" src="./assets/gears.png" alt="gears" />
+
+    <!-- explosions -->
+    <img
+      class="layer"
+      src="./assets/animations/fireExplosion.png"
+      id="fire"
+      alt="fire"
+    />
+    <img
+      class="layer"
+      src="./assets/animations/smokeExplosion.png"
+      id="smoke"
+      alt="smoke"
+    />
+
+    <!-- background layer -->
+    <img
+      class="layer"
+      id="layer1"
+      src="./assets//background/layer1.png"
+      alt="layer"
+    />
+    <img
+      class="layer"
+      id="layer2"
+      src="./assets//background/layer2.png"
+      alt="layer"
+    />
+    <img
+      class="layer"
+      id="layer3"
+      src="./assets//background/layer3.png"
+      alt="layer"
+    />
+    <img
+      class="layer"
+      id="layer4"
+      src="./assets//background/layer4.png"
+      alt="layer"
+    />
+    <audio id="powerup" src="assets/audio/powerup.wav"></audio>
+    <audio id="powerdown" src="assets/audio/powerdown.wav"></audio>
+    <audio id="explosion" src="assets/audio/explosion.wav"></audio>
+    <audio id="shot" src="assets/audio/shot.wav"></audio>
+    <audio id="hit" src="assets/audio/hit.wav"></audio>
+
+    <footer class="footer">Made By Zeeshan Ashraf</footer>
+  </body>
+</html>
